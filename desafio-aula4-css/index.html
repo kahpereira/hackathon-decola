@@ -9,39 +9,75 @@
 
   <style>
     * {
-      padding: 0;
       margin: 0;
     }
 
     .div1 {
       background: red;
-      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       height: 25vh;
     }
 
     .div2 {
       background: orange;
-      text-align: center;
       height: 25vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
     }
 
     .div3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .div3 .info1 {
       background: yellow;
-      text-align: center;
-      height: 25vh;
+      height: 12vh;
+    }
+
+    .div3 .info2 {
+      background: green;
+      height: 12vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .div4 {
+      height: 12vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .div4 .info3 {
+      background: blue;
+      width: 50vw;
+    }
+
+    .div4 .info4 {
+      background: purple;
+      width: 50vw;
+      display: flex;
     }
   </style>
 </head>
 
 <body>
-  <div class="div1">
-    <p>Div 1</p>
-  </div>
-  <div class="div2">
-    <p>Div 2</p>
-  </div>
+  <div class="div1">Div 1</div>
+  <div class="div2">Div 2</div>
   <div class="div3">
-    <p>Div 3</p>
+    <div class="info1">Info 1</div>
+    <div class="info2">Info 2</div>
+  </div>
+  <div class="div4">
+    <div class="info3">Info 3</div>
+    <div class="info4">Info 4</div>
   </div>
 </body>
 
