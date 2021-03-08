@@ -43,6 +43,7 @@ label span {
 }
 
 label span:nth-child(1) {
+  /*Utilização do pseudo-classe "nth-child()" para selecionar cada um dos filhos (span)*/
   top: 0px;
 }
 label span:nth-child(2) {
